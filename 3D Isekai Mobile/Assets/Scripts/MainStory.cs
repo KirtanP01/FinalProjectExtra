@@ -5,6 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainStory : MonoBehaviour{
     private void OnEnable(){
-        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+        SceneManager.LoadScene("DialogueSystem", LoadSceneMode.Single);
     }
 }
