@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class LSLevelEntry : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class LSLevelEntry : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Jump") && canLoadLevel && levelUnlocked && !levelLoading)
+        if(CrossPlatformInputManager.GetButtonDown("Jump") && canLoadLevel && levelUnlocked && !levelLoading)
         {
             StartCoroutine(LevelLoadCo());
             levelLoading = true;

@@ -75,6 +75,8 @@
     <Compile Include="Assets\Scripts\LevelSelect\LSBridge.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
+    <Compile Include="Assets\Scripts\TutorialInteractOnTrigger.cs" />
+    <Compile Include="Assets\Rin\Demo\Scripts\UIManagerRin.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
@@ -94,8 +96,14 @@
     <Compile Include="Assets\Scripts\LevelExit.cs" />
     <Compile Include="Assets\Scripts\Level Mechanics\SwitchingObjects.cs" />
     <Compile Include="Assets\Scripts\HurtEnemy.cs" />
+    <Compile Include="Assets\Scripts\InfoCanvasController.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Rin\Advance Unlit Shader\Advance Unlit.shader" />
+    <None Include="Assets\Rin\ReadMe!.txt" />
     <None Include="Assets\3D Isekai Assets\navmesh link.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\3D Isekai Assets\Skybox\Fantasy Skybox FREE\Fog and Ambient references.txt" />
