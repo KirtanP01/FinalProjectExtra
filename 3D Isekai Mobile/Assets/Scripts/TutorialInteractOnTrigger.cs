@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TutorialInteractOnTrigger : MonoBehaviour
 {
-    public GameObject movementInfoZone, checkpointInfoZone, spikeInfoZone, healthCanisterInfoZone, zombieInfoZone, coinsGroupInfoZone, coinSingleInfoZone, levelEndInfoZone;
+    public GameObject movementInfoZone, checkpointInfoZone, spikeInfoZone, healthCanisterInfoZone, zombieInfoZone, coinsGroupInfoZone, coinSingleInfoZone, levelEndInfoZone, coinsCrateInfoZone;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -51,6 +51,11 @@ public class TutorialInteractOnTrigger : MonoBehaviour
                 Debug.Log("LevelEndInfoZone");
                 InfoCanvasController.instance.levelEndText.gameObject.SetActive(true);
             }
+            else if (this.gameObject.name == "CoinsCrateInfoZone")
+            {
+                Debug.Log("CoinsCrateInfoZone");
+                InfoCanvasController.instance.coinCrateText.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -66,6 +71,7 @@ public class TutorialInteractOnTrigger : MonoBehaviour
             InfoCanvasController.instance.coinsGroupText.gameObject.SetActive(false);
             InfoCanvasController.instance.coinSingleText.gameObject.SetActive(false);
             InfoCanvasController.instance.levelEndText.gameObject.SetActive(false);
+            InfoCanvasController.instance.coinCrateText.gameObject.SetActive(false);
         }
     }
 }

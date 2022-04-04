@@ -14,6 +14,7 @@ public class InfoCanvasController : MonoBehaviour
     public Text coinsGroupText;
     public Text coinSingleText;
     public Text levelEndText;
+    public Text coinCrateText;
 
     // Start is called before the first frame update
     void Awake()
