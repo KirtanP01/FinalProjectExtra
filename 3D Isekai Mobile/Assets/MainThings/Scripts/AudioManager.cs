@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// This class manages the music and sound effect (SFX) volume set from the Options menu,
+// plays the music or SFX based on the event triggered
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -16,6 +19,7 @@ public class AudioManager : MonoBehaviour
 
     //private int currentTrack;
 
+    // Awake is called before the Start method
     private void Awake()
     {
         instance = this;
@@ -39,6 +43,7 @@ public class AudioManager : MonoBehaviour
         } */
     }
 
+    // This method plays the music store in the music array bsaed on the event triggered
     public void PlayMusic(int musicToPlay)
     {
         for(int i = 0; i < music.Length; i++)
@@ -49,16 +54,19 @@ public class AudioManager : MonoBehaviour
         music[musicToPlay].Play();
     }
 
+    // This method plays the sound effect store in the SFX array bsaed on the event triggered
     public void PlaySFX(int sfxToPlay)
     {
         sfx[sfxToPlay].Play();
     }
 
+    // This method sets the volume level of Music mixer
     public void SetMusicLevel()
     {
         musicMixer.audioMixer.SetFloat("MusicVol", UIManager.instance.musicVolSlider.value);
     }
 
+    // This method sets the volume level of SFX mixer
     public void SetSFXLevel()
     {
         sfxMixer.audioMixer.SetFloat("SfxVol", UIManager.instance.sfxVolSlider.value);

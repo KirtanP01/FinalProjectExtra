@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class manages the logic for Boss character activation, entry, movements, death and sound/music effects
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

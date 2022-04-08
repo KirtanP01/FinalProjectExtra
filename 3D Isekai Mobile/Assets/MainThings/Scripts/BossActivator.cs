@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class manages the logic of enabling the boss when player enters the boss activatoion zone (box colider)
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{86A568FC-5A9B-F9E3-1774-C864C9895E8D}</ProjectGuid>
+    <ProjectGuid>{0C32ED08-46CA-23AC-1A8B-A8F48BAB1F0A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.TestRunner</AssemblyName>
@@ -387,7 +387,7 @@
  <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Deepak/Unity/3D Platformer-Mobile/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/c4151c/Documents/GitHub/FinalProjectExtra/3D Isekai Mobile/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity 2020.3.28f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

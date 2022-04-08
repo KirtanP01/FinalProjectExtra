@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{597E9AB3-3B3E-442A-7DE7-91DBC9AD9D07}</ProjectGuid>
+    <ProjectGuid>{D9BBBB1C-053E-5F04-0BF6-B8902CA3C14E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditor.Purchasing</AssemblyName>
@@ -390,7 +390,7 @@
  <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Deepak/Unity/3D Platformer-Mobile/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/c4151c/Documents/GitHub/FinalProjectExtra/3D Isekai Mobile/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity 2020.3.28f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -743,57 +743,57 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{62884A38-136D-E5E8-1372-CFA703EB268E}</Project>
+      <Project>{05EA53D7-4F09-A960-9D04-623F51EFB533}</Project>
       <Name>UnityEngine.Purchasing</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{4066A52B-9183-03B6-147D-76FD4DF013CF}</Project>
+      <Project>{6D435EF2-585B-6A46-CB45-0115F10FA974}</Project>
       <Name>Purchasing.Common</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{11B5883B-E267-2F61-3477-977EBE451A1D}</Project>
+      <Project>{363EDDFB-3ED1-B3E4-43E0-4D13C553B194}</Project>
       <Name>UnityEngine.Purchasing.SecurityCore</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{06B6206C-CBBD-624F-DFAF-FFA3F8048B67}</Project>
+      <Project>{542AF3CD-9248-BB28-3AEC-269CDD3875F5}</Project>
       <Name>UnityEngine.Purchasing.SecurityStub</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{A5171AC7-C258-730C-DC0E-85E66B98D857}</Project>
+      <Project>{0BD79EEE-CE65-59A0-FCD3-14023F9E9678}</Project>
       <Name>UnityEngine.Purchasing.Stores</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{9082D07D-EB2C-00E8-5AA7-092EB4D10EC3}</Project>
+      <Project>{B4BD78AA-D3A5-ECC0-AF65-A831C61C57AC}</Project>
       <Name>UnityEngine.Purchasing.Codeless</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Editor.csproj">
-      <Project>{099B834C-400D-9B0D-674F-8E11487DEB92}</Project>
+      <Project>{48BCEF23-2FDD-0709-94FA-A7B2EBA62251}</Project>
       <Name>Unity.Services.Core.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{CF34D609-7ABB-BA30-61BE-4D0FFB96FFC2}</Project>
+      <Project>{F75C15AF-5660-0868-1593-FDD7D5087A6E}</Project>
       <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{9BB553EF-A6B4-10C5-EB0C-3D5F6E245EBC}</Project>
+      <Project>{CEAAF526-867E-958F-5B85-729C408A328F}</Project>
       <Name>UnityEngine.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{86A568FC-5A9B-F9E3-1774-C864C9895E8D}</Project>
+      <Project>{0C32ED08-46CA-23AC-1A8B-A8F48BAB1F0A}</Project>
       <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{510DD2FF-D76F-B5C9-BDA8-B8500E8A23CE}</Project>
+      <Project>{936D3D38-D09E-65E2-92E3-D69A4BA6E686}</Project>
       <Name>UnityEditor.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* #################### Documentation ####################
+  This class manages the logic to pause or unpause the game, end the level and load a new level, 
+  respawn the player when dies, Reset the health and coins earned, add coins.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public bool isRespawning;
 
+    // Awake is called before the Start method
     private void Awake()
     {
         instance = this;
@@ -36,7 +41,7 @@ public class GameManager : MonoBehaviour
         AddCoins(0);
     }
 
-    // Update is called once per frame
+    // Update method is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) || CrossPlatformInputManager.GetButtonDown("Escape"))
@@ -52,6 +57,10 @@ public class GameManager : MonoBehaviour
         HealthManager.instance.PlayerKilled();
     }
 
+    // This is coroutine which gets call to respawn the player in the event when player gets killed
+    // by the enemies or fall off the killzone.
+    // It will reset almost all class objects (PlayerController, UIManager, HealthManager, CamController, etc.) used in the game to restore the player back to the last
+    // checkpoint he/she visitied before the kill.
     public IEnumerator RespawnCo()
     {
         PlayerController.instance.gameObject.SetActive(false);
@@ -89,6 +98,7 @@ public class GameManager : MonoBehaviour
         UIManager.instance.coinText.text = "" + currentCoins;
     }
 
+    // This method pause or unpause the game when user presses Esc button on the screen and shows pause menu
     public void PauseUnpause()
     {
         if(UIManager.instance.pauseScreen.activeInHierarchy)
@@ -109,6 +119,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // This Coroutine handles the level end actions like
+    // Fades In and Fades out using the black screen to switch from the completetd level screen to next level screen
+    // Unlocks the completed level,
+    // Sets the coins to current coins or default coins
+    // loads the next level screen
+    // Stores the next level screen name into the game DB using PlayerPref class provided by Unity
     public IEnumerator LevelEndCo()
     {
         AudioManager.instance.PlayMusic(levelEndMusic);

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class calls the BossDamage() method from BossController class when player hits the Boss.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

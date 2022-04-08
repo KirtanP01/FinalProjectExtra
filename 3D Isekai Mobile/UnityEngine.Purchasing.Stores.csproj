@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A5171AC7-C258-730C-DC0E-85E66B98D857}</ProjectGuid>
+    <ProjectGuid>{0BD79EEE-CE65-59A0-FCD3-14023F9E9678}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEngine.Purchasing.Stores</AssemblyName>
@@ -758,57 +758,57 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.Purchasing.AppleCore.csproj">
-      <Project>{8EAFDA6B-9CD3-95AA-7C42-FF324DFDBB37}</Project>
+      <Project>{A20A4DB8-6172-9F75-84E0-C18482110D63}</Project>
       <Name>UnityEngine.Purchasing.AppleCore</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.AppleMacosStub.csproj">
-      <Project>{B46B7858-8CB8-A31B-E55A-45D1B3CE225A}</Project>
+      <Project>{28BA8F45-BB82-9A00-8B20-9FE49E80D0DA}</Project>
       <Name>UnityEngine.Purchasing.AppleMacosStub</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.AppleStub.csproj">
-      <Project>{356692F5-3DDA-8E8E-9C78-8108E587A69C}</Project>
+      <Project>{423DC2BE-71CF-1E94-19FC-C6FE8BB5D562}</Project>
       <Name>UnityEngine.Purchasing.AppleStub</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{62884A38-136D-E5E8-1372-CFA703EB268E}</Project>
+      <Project>{05EA53D7-4F09-A960-9D04-623F51EFB533}</Project>
       <Name>UnityEngine.Purchasing</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{4066A52B-9183-03B6-147D-76FD4DF013CF}</Project>
+      <Project>{6D435EF2-585B-6A46-CB45-0115F10FA974}</Project>
       <Name>Purchasing.Common</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{11B5883B-E267-2F61-3477-977EBE451A1D}</Project>
+      <Project>{363EDDFB-3ED1-B3E4-43E0-4D13C553B194}</Project>
       <Name>UnityEngine.Purchasing.SecurityCore</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{06B6206C-CBBD-624F-DFAF-FFA3F8048B67}</Project>
+      <Project>{542AF3CD-9248-BB28-3AEC-269CDD3875F5}</Project>
       <Name>UnityEngine.Purchasing.SecurityStub</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.WinRTCore.csproj">
-      <Project>{ADD06322-8EFB-BD1D-E273-AC862AD2FBD2}</Project>
+      <Project>{F933F05B-B166-5A02-E769-6804E6048666}</Project>
       <Name>UnityEngine.Purchasing.WinRTCore</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.WinRTStub.csproj">
-      <Project>{27E7262F-B776-2EB7-5C48-3FF0838222C0}</Project>
+      <Project>{6D376B69-BC24-9C05-96EC-9303A9951A42}</Project>
       <Name>UnityEngine.Purchasing.WinRTStub</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{CF34D609-7ABB-BA30-61BE-4D0FFB96FFC2}</Project>
+      <Project>{F75C15AF-5660-0868-1593-FDD7D5087A6E}</Project>
       <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{9BB553EF-A6B4-10C5-EB0C-3D5F6E245EBC}</Project>
+      <Project>{CEAAF526-867E-958F-5B85-729C408A328F}</Project>
       <Name>UnityEngine.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
