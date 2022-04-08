@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41049651}
-  - component: {fileID: 41049652}
+  - component: {fileID: 41049650}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -140,6 +140,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &41049650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41049649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abcb2139d864a1d42bada980f844ead7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1902363002}
+  dialogueText: {fileID: 405799897}
+  animator: {fileID: 1227673216}
 --- !u!4 &41049651
 Transform:
   m_ObjectHideFlags: 0
@@ -154,22 +169,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &41049652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41049649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 030982dd4023bf140a3fd84a27893c66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1902363002}
-  dialogueText: {fileID: 405799897}
-  animator: {fileID: 1227673216}
-  i: 0
 --- !u!1 &122818567
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,8 +592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000015259}
-  m_SizeDelta: {x: 1103, y: 556}
+  m_AnchoredPosition: {x: 0.00048349, y: -0.000066102}
+  m_SizeDelta: {x: 1105, y: 553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439600594
 MonoBehaviour:
@@ -703,7 +702,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 1184497654}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -839,7 +838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1012990662}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: DialogueManager2, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
@@ -897,7 +896,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012990657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55471dd2644b114ebdf26d28e12a3ef, type: 3}
+  m_Script: {fileID: 11500000, guid: abcb2139d864a1d42bada980f844ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 1902363002}
@@ -1050,7 +1049,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Summoners
+    names:
+    - Summoners
+    - Narrator
+    - King
+    - Queen
     sentences:
     - Did it work? Is our savior here? Did it finally work?
     - There were a lot of murmurs around the room and Rin was confused about what
@@ -1084,7 +1087,10 @@ MonoBehaviour:
     - "We want you to go on a journey to the demon lord\u2019s castle/world and defeat
       him. Please help us out."
     - Sure I will help out, but can you tell me details about the enemies?
-    - 'Yes, there will be... '
+    - Yes, there will be
+  name:
+    names: []
+    sentences: []
 --- !u!1001 &1141595288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,7 +1561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -133}
+  m_AnchoredPosition: {x: -361.91, y: -154.72}
   m_SizeDelta: {x: 56.508, y: 89.202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134527496

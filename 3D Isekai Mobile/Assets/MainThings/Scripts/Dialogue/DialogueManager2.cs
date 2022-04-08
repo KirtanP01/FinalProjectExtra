@@ -23,19 +23,20 @@ public class DialogueManager2 : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //Debug.Log("Starting conversation with " + dialogue.name);
+        Debug.Log("Starting conversation");
         animator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
 
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
+            //Debug.Log("Sentences Enqueued");
             sentences.Enqueue(sentence);
         }
 
-        foreach (string name in dialogue.sentences)
+        foreach (string name in dialogue.names)
         {
+            //Debug.Log("Name Enqueued");
             names.Enqueue(name);
         }
 
