@@ -11,13 +11,13 @@ public class DialogueManager2 : MonoBehaviour
 
     public Animator animator;
 
-    public static Queue<string> sentences;
+    public static Queue<string> dialogues;
     public static Queue<string> names;
 
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+        dialogues = new Queue<string>();
         names = new Queue<string>();
     }
 
@@ -26,12 +26,12 @@ public class DialogueManager2 : MonoBehaviour
         Debug.Log("Starting conversation");
         animator.SetBool("IsOpen", true);
 
-        sentences.Clear();
+        dialogues.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.dialogues)
         {
             //Debug.Log("Sentences Enqueued");
-            sentences.Enqueue(sentence);
+            dialogues.Enqueue(sentence);
         }
 
         foreach (string name in dialogue.names)
@@ -46,7 +46,7 @@ public class DialogueManager2 : MonoBehaviour
     public void DisplayNextSentence()
     {
         //Debug.Log(sentences.Count);
-        if (sentences.Count == 0)
+        if (dialogues.Count == 0)
         {
             //Debug.Log("End of list");
             EndDialogue();
@@ -54,7 +54,7 @@ public class DialogueManager2 : MonoBehaviour
         }
 
         string name = names.Dequeue();
-        string sentence = sentences.Dequeue();
+        string sentence = dialogues.Dequeue();
         //Debug.Log(sentence);
         nameText.text = name;
         dialogueText.text = sentence;

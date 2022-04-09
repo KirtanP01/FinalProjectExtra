@@ -8,28 +8,46 @@ public class DialogueManager : MonoBehaviour
 
     public Text nameText;
     public Text dialogueText;
+    /*
+     * Character Order In Dialogue
+     * Summoners = 0
+     * Narrator = 1
+     * King = 2
+     * Queen = 3
+     * Rin = 4
+     * Woman = 5
+     */
+    private int[] characterOrder = new int[] {0, 1, 2, 2, 4, 2, 1, 4, 2, 4, 2, 1, 1, 5, 4, 5, 4, 3, 3, 3, 4, 3, 3, 3, 3};
+    private string[] characters = new string[] { "Summoners", "Narrator", "King", "Queen", "Rin", "Woman" };
+
+    private static int dialogueNum;
+
+    public RawImage king;
+    public RawImage queen;
 
     public Animator animator;
 
-    public static Queue<string> sentences;
+    public static Queue<string> dialogues;
 
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+        dialogues = new Queue<string>();
+        dialogueNum = 0;
+        queen.enabled = false;
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        //Debug.Log("Starting conversation with " + dialogue.name);
+        //Debug.Log("Starting conversation with ");
         animator.SetBool("IsOpen", true);
         //nameText.text = dialogue.name;
 
-        sentences.Clear();
+        dialogues.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.dialogues)
         {
-            sentences.Enqueue(sentence);
+            dialogues.Enqueue(sentence);
         }
 
         DisplayNextSentence();
@@ -37,17 +55,29 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        int count;
         //Debug.Log(sentences.Count);
-        if (sentences.Count == 0)
+        if (dialogues.Count == 0)
         {
             //Debug.Log("End of list");
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        if (dialogueNum == 13)
+        {
+            //FindObjectOfType<RawImage>().;
+            //King = GameObject.FindObjectsOfType<RawImage>;
+            king.enabled = false;
+            queen.enabled = true;
+        }
+
+        string sentence = dialogues.Dequeue();
         //Debug.Log(sentence);
+        count = characterOrder[dialogueNum];
+        nameText.text = characters[count];
         dialogueText.text = sentence;
+        dialogueNum++;
     }
 
     void EndDialogue()

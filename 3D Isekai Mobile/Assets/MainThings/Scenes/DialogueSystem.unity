@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41049651}
-  - component: {fileID: 41049650}
+  - component: {fileID: 41049652}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -140,21 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &41049650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41049649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abcb2139d864a1d42bada980f844ead7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1902363002}
-  dialogueText: {fileID: 405799897}
-  animator: {fileID: 1227673216}
 --- !u!4 &41049651
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +154,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &41049652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41049649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55471dd2644b114ebdf26d28e12a3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1902363002}
+  dialogueText: {fileID: 405799897}
+  king: {fileID: 410857548}
+  queen: {fileID: 759622661}
+  animator: {fileID: 1227673216}
 --- !u!1 &122818567
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,8 +594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00048349, y: -0.000066102}
-  m_SizeDelta: {x: 1105, y: 553}
+  m_AnchoredPosition: {x: 0.00017797, y: -0.0000061989}
+  m_SizeDelta: {x: 1105, y: 578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439600594
 MonoBehaviour:
@@ -727,7 +729,7 @@ RectTransform:
   - {fileID: 1227673213}
   - {fileID: 1084206172}
   - {fileID: 410857547}
-  - {fileID: 2134527495}
+  - {fileID: 759622660}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -753,6 +755,78 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &759622659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759622660}
+  - component: {fileID: 759622662}
+  - component: {fileID: 759622661}
+  m_Layer: 5
+  m_Name: Queen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &759622660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759622659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8934402, y: 2.4112, z: 2.4112}
+  m_Children: []
+  m_Father: {fileID: 756321856}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -383.6601, y: -154.72246}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &759622661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759622659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 6cf7f0627956c7c47bdcfa7a69119db0, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &759622662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759622659}
+  m_CullTransparentMesh: 1
 --- !u!1 &1012990657
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +839,7 @@ GameObject:
   - component: {fileID: 1012990661}
   - component: {fileID: 1012990660}
   - component: {fileID: 1012990659}
-  - component: {fileID: 1012990662}
+  - component: {fileID: 1012990663}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -837,8 +911,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1012990662}
-        m_TargetAssemblyTypeName: DialogueManager2, Assembly-CSharp
+      - m_Target: {fileID: 1012990663}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
@@ -887,7 +961,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012990657}
   m_CullTransparentMesh: 1
---- !u!114 &1012990662
+--- !u!114 &1012990663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -896,11 +970,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012990657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abcb2139d864a1d42bada980f844ead7, type: 3}
+  m_Script: {fileID: 11500000, guid: a55471dd2644b114ebdf26d28e12a3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 1902363002}
   dialogueText: {fileID: 405799897}
+  king: {fileID: 0}
+  queen: {fileID: 0}
   animator: {fileID: 1227673216}
 --- !u!1 &1084206171
 GameObject:
@@ -986,9 +1062,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1084206176}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueManager2, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1054,18 +1130,20 @@ MonoBehaviour:
     - Narrator
     - King
     - Queen
-    sentences:
+    - Rin
+    - Woman
+    dialogues:
     - Did it work? Is our savior here? Did it finally work?
     - There were a lot of murmurs around the room and Rin was confused about what
-      had happened.
+      had happened
     - SILENCE!!! OUR SAVIOR IS HERE!
     - Hello hero, may I know your name?
     - "Uhh \u2026 my name is Rin."
     - I see you are hero Rin, since the hero is here let us celebrate.
-    - Everyone started clapping and went out of the room taking Rin with them. They
-      held a party, but Rin still did not know what was going on.
+    - Everyone started clapping. They held a party, but Rin still did not know what
+      was going on
     - "Umm \u2026 what is hap\u2026"
-    - "Oh hero, are you enjoying it?\r"
+    - Oh hero, are you enjoying?
     - "Yes, but ca\u2026"
     - That is good.
     - "Rin, who didn\u2019t understand what was going on, kept going around and trying
@@ -1075,22 +1153,17 @@ MonoBehaviour:
     - Hello there Hero Rin, you are probably wondering what is going on right now.
     - "Yes, I was asking around, but I wasn\u2019t told anything and am very confused."
     - "I see, I guess my husband didn\u2019t tell you what the situation is."
-    - "Yeah, he didn\u2019t .. wait, \u201Cyour husband\u201D so you're the queen?"
-    - Yes, I am the queen of this kingdom. About what is happening and why we have
-      summoned you.
+    - "Yeah, he didn\u2019t .. wait, \u201Cyour husband\u201D so you're the queen?!"
     - Yes, I am the queen of this kingdom. About what is happening and why we have
       summoned you.
     - "Our kingdom is being attacked by the demon lord, we tried to fight against
       him ourselves, but we lost so many and decided that we couldn\u2019t beat him."
     - So we decided that we should summon a hero to help us. As a hero, you have
       high stats and are powerful.
-    - "We want you to go on a journey to the demon lord\u2019s castle/world and defeat
-      him. Please help us out."
     - Sure I will help out, but can you tell me details about the enemies?
-    - Yes, there will be
-  name:
-    names: []
-    sentences: []
+    - Yes, you will be provided with all information and training
+    - We are relying on you and hoping that you will succeed
+    - Good luck and take care of yourself
 --- !u!1001 &1141595288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1526,76 +1599,4 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902363000}
-  m_CullTransparentMesh: 1
---- !u!1 &2134527494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2134527495}
-  - component: {fileID: 2134527497}
-  - component: {fileID: 2134527496}
-  m_Layer: 5
-  m_Name: Queen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2134527495
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134527494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.8934402, y: 2.4112, z: 2.4112}
-  m_Children: []
-  m_Father: {fileID: 756321856}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -361.91, y: -154.72}
-  m_SizeDelta: {x: 56.508, y: 89.202}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2134527496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134527494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8f1231e51b8e7ab4d839185a610ab5aa, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &2134527497
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134527494}
   m_CullTransparentMesh: 1
