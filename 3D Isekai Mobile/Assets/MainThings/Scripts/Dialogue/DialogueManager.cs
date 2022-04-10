@@ -67,15 +67,22 @@ public class DialogueManager : MonoBehaviour
             //return;
         }
 
-        if (dialogueNum == 13)
+        if (dialogueNum == 11)
         {
             //FindObjectOfType<RawImage>().;
             //King = GameObject.FindObjectsOfType<RawImage>;
             //king.enabled =false;
             //queen.enabled = true;
-            theImage.texture = textureList[1]; //Changing the image from King to Queen
+            theImage.enabled = false;
         }
 
+        if (dialogueNum == 13)
+        {
+            theImage.texture = textureList[1]; //Changing the image from King to Queen
+            theImage.enabled = true;
+        }
+            
+        
         string sentence = dialogues.Dequeue();
         //Debug.Log(sentence);
         count = characterOrder[dialogueNum];
