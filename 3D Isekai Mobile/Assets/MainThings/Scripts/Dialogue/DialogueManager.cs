@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,8 +23,9 @@ public class DialogueManager : MonoBehaviour
 
     private static int dialogueNum;
 
-    public RawImage king;
-    public RawImage queen;
+    public RawImage theImage;
+    
+    public Texture[] textureList = new Texture[2];
 
     public Animator animator;
 
@@ -33,8 +35,8 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialogues = new Queue<string>();
+        theImage.texture = textureList[0];
         dialogueNum = 0;
-        queen.enabled = false;
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -61,15 +63,17 @@ public class DialogueManager : MonoBehaviour
         {
             //Debug.Log("End of list");
             EndDialogue();
-            return;
+            SceneManager.LoadScene("Tutorial Level", LoadSceneMode.Single);
+            //return;
         }
 
         if (dialogueNum == 13)
         {
             //FindObjectOfType<RawImage>().;
             //King = GameObject.FindObjectsOfType<RawImage>;
-            king.enabled = false;
-            queen.enabled = true;
+            //king.enabled =false;
+            //queen.enabled = true;
+            theImage.texture = textureList[1]; //Changing the image from King to Queen
         }
 
         string sentence = dialogues.Dequeue();
