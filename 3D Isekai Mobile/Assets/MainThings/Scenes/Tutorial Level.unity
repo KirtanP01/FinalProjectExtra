@@ -3670,9 +3670,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is a zombie. It is the lowest level member of the demon lord army
-    and there will a lot of them. Each zombie has a area that they guard. If you
-    enter that area, they will start to attck you. Make sure to dodge If the zombie
+  m_Text: This is a skeleton. It is the lowest level member of the demon lord army
+    and there will a lot of them. Each skeleton has a area that they guard. If you
+    enter that area, they will start to attck you. Make sure to dodge If the skeleton
     manages to hit you, you will lose one HP.
 --- !u!222 &354106839
 CanvasRenderer:
@@ -5049,6 +5049,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &473445724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473445718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b276e8e89c44125408f362416496a9d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 473445715}
+  characterAnimator: {fileID: 473445719}
+  viewStatusText: {fileID: 0}
+  frontYRotationValue: -18
+  backYRotationValue: 150
+  rightYRotationValue: 60
+  leftYRotationValue: -100
 --- !u!4 &481791788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1511698345, guid: 235539f947d857440a0d9c4e2cdee08a,
@@ -17741,17 +17760,17 @@ PrefabInstance:
     - target: {fileID: 118342045147771580, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.056485195
+      value: 0.056485187
       objectReference: {fileID: 0}
     - target: {fileID: 118342045147771580, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000000409544
+      value: 0.0000000041263766
       objectReference: {fileID: 0}
     - target: {fileID: 118342045147771580, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.3170166e-10
+      value: -2.3345187e-10
       objectReference: {fileID: 0}
     - target: {fileID: 118342045147771583, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17786,12 +17805,12 @@ PrefabInstance:
     - target: {fileID: 118342045168388597, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00040306742
+      value: 0.00040306768
       objectReference: {fileID: 0}
     - target: {fileID: 118342045168388597, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0011800646
+      value: -0.0011800652
       objectReference: {fileID: 0}
     - target: {fileID: 118342046028479992, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17846,12 +17865,12 @@ PrefabInstance:
     - target: {fileID: 118342046364211272, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00043093733
+      value: 0.0004309421
       objectReference: {fileID: 0}
     - target: {fileID: 118342046364211272, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.001190407
+      value: -0.0011904201
       objectReference: {fileID: 0}
     - target: {fileID: 118342046889674546, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17871,7 +17890,7 @@ PrefabInstance:
     - target: {fileID: 118342046889674546, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.95201623
+      value: 0.9520163
       objectReference: {fileID: 0}
     - target: {fileID: 118342046889674546, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17881,12 +17900,12 @@ PrefabInstance:
     - target: {fileID: 118342046889674546, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00038007865
+      value: 0.00038007117
       objectReference: {fileID: 0}
     - target: {fileID: 118342046889674546, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0011824822
+      value: -0.0011824466
       objectReference: {fileID: 0}
     - target: {fileID: 1823741226732920555, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17902,6 +17921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327812806713636309, guid: 1d14536911fd20747802f913c81a2f6d,
+        type: 3}
+      propertyPath: levelToLoad
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2327812806713636310, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -17962,6 +17986,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078140104322191872, guid: 1d14536911fd20747802f913c81a2f6d,
+        type: 3}
+      propertyPath: mainMenu
+      value: StartMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4078140104322191872, guid: 1d14536911fd20747802f913c81a2f6d,
+        type: 3}
+      propertyPath: levelSelect
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4078140104322191900, guid: 1d14536911fd20747802f913c81a2f6d,
         type: 3}
@@ -18891,7 +18925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740677857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.36, y: -0.81, z: 56.62}
+  m_LocalPosition: {x: -6.8599997, y: -0.81, z: 56.62}
   m_LocalScale: {x: -6.072302, y: -2.3588266, z: 3.1211548}
   m_Children: []
   m_Father: {fileID: 408116125}
@@ -20451,7 +20485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859305823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.05, y: 0.32, z: 57.53}
+  m_LocalPosition: {x: 0.29999995, y: 0.32, z: 57.53}
   m_LocalScale: {x: -6.744568, y: -2.619973, z: 3.4666986}
   m_Children: []
   m_Father: {fileID: 408116125}
@@ -23509,12 +23543,12 @@ PrefabInstance:
     - target: {fileID: 1542533529251320845, guid: 5a0cace9aadadd945b317af42fbfb731,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.62
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1542533529251320845, guid: 5a0cace9aadadd945b317af42fbfb731,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.71
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1542533529251320845, guid: 5a0cace9aadadd945b317af42fbfb731,
         type: 3}

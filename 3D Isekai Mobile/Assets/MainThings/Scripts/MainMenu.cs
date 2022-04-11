@@ -21,6 +21,7 @@ public class MainMenu : MonoBehaviour
         {
             ResetProgress();
         }
+        UIManagerRin.instance.TriggerRun();
     }
 
     // Update is called once per frame

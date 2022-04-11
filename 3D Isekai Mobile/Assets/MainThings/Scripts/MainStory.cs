@@ -9,6 +9,12 @@ public class MainStory : MonoBehaviour{
     //Select a Texture in the Inspector to change to
     public Texture m_Texture;
 
+    private void Start()
+    {
+        UIManagerRin.instance.TriggerIdle();
+    }
+    
+
     private void OnEnable(){
     SceneManager.LoadScene("DialogueSystem", LoadSceneMode.Single);
     }

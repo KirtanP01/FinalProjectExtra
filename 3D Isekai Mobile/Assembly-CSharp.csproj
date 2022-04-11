@@ -89,7 +89,7 @@
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\DoorController.cs" />
     <Compile Include="Assets\MainThings\Scripts\HealthPickup.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
-    <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\MainThings\Scripts\50%25 Project\DialogueManager.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Utility\SmoothFollow.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
     <Compile Include="Assets\Extra\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
@@ -135,9 +135,9 @@
     <Compile Include="Assets\Extra\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAudio.cs" />
     <Compile Include="Assets\Extra\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
-    <Compile Include="Assets\MainThings\Scripts\TutorialInteractOnTrigger.cs" />
+    <Compile Include="Assets\MainThings\Scripts\50%25 Project\TutorialInteractOnTrigger.cs" />
     <Compile Include="Assets\MainThings\Yurowm\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\MainThings\Rin\Demo\Scripts\UIManagerRin.cs" />
+    <Compile Include="Assets\MainThings\Scripts\RIn\UIManagerRin.cs" />
     <Compile Include="Assets\Extra\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\MainThings\Scripts\UIManager.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />

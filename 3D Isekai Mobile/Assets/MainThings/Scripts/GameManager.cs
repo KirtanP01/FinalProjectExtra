@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
         StartCoroutine(RespawnCo());
 
         HealthManager.instance.PlayerKilled();
+
+       
     }
 
     // This is coroutine which gets call to respawn the player in the event when player gets killed
@@ -84,6 +86,14 @@ public class GameManager : MonoBehaviour
         CameraController.instance.theCMBrain.enabled = true;
 
         PlayerController.instance.gameObject.SetActive(true);
+        
+        string Scenename = SceneManager.GetActiveScene().name;
+        Debug.Log("Scene Name: " + Scenename);
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel")
+        {
+            UIManagerRin.instance.TriggerRun();
+            Debug.Log("Run Triggered");
+        }
     }
 
     public void SetSpawnPoint(Vector3 newSpawnPoint)

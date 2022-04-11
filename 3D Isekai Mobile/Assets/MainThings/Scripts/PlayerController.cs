@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,6 +42,14 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         theCam = Camera.main;
+        string Scenename = SceneManager.GetActiveScene().name;
+        Debug.Log("Scene Name: " + Scenename);
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel")
+        {
+            UIManagerRin.instance.TriggerRun();
+            Debug.Log("Run Triggered");
+        }
+
     }
 
     // Update is called once per frame

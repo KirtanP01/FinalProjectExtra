@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManagerRin : MonoBehaviour
 {
@@ -22,8 +23,13 @@ public class UIManagerRin : MonoBehaviour
     public float backYRotationValue = 150f;
     public float rightYRotationValue = 60f;
     public float leftYRotationValue = -100f;
+    public static UIManagerRin instance;
 
-
+    // Awake is called before the Start method
+    private void Awake()
+    {
+        instance = this;
+    }
     private enum ViewState
     {
         frontView,
@@ -43,7 +49,14 @@ public class UIManagerRin : MonoBehaviour
         characterFrontRotation = Quaternion.Euler(0, frontYRotationValue, 0);
         characterLeftRotation = Quaternion.Euler(0, leftYRotationValue, 0);
         characterRightRotation = Quaternion.Euler(0, rightYRotationValue, 0);
+        
+        string Scenename = SceneManager.GetActiveScene().name;
 
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel")
+        {
+            UIManagerRin.instance.TriggerRun();
+        }
+        
     }
 
     public void TriggerIdle()
