@@ -75,8 +75,8 @@
     <Compile Include="Assets\Extra\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSLevelEntry.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
-    <Compile Include="Assets\Extra\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
+    <Compile Include="Assets\Extra\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Vehicles\Aircraft\Scripts\AeroplanePropellerAnimator.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
@@ -156,7 +156,7 @@
     <Compile Include="Assets\Extra\Standard Assets\Utility\AlphaButtonClickMask.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
     <Compile Include="Assets\Extra\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
-    <Compile Include="Assets\MainThings\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\MainThings\Scripts\StartMenu.cs" />
     <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\MainThings\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSCamera.cs" />

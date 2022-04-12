@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MainThings/Scenes/LevelOne.unity
+- path: Assets/MainThings/Scenes/StartMenu.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
