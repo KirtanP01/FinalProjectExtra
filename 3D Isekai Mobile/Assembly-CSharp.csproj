@@ -78,7 +78,7 @@
     <Compile Include="Assets\MainThings\Yurowm\Demo\Scripts\PlayerControllerSporty.cs" />
     <Compile Include="Assets\MainThings\Scripts\TutorialInteractOnTrigger.cs" />
     <Compile Include="Assets\MainThings\Yurowm\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\MainThings\Rin\Demo\Scripts\UIManagerRin.cs" />
+    <Compile Include="Assets\MainThings\Scripts\RIn\UIManagerRin.cs" />
     <Compile Include="Assets\MainThings\Scripts\UIManager.cs" />
     <Compile Include="Assets\MainThings\Scripts\CameraController.cs" />
     <Compile Include="Assets\MainThings\Scripts\EnemyController.cs" />
@@ -765,21 +765,21 @@
       <Project>{BA429F68-FEA1-322A-678E-C7524F1985E7}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
-      <Project>{7CE1F2AF-83A0-507F-8B52-6D9BD5DFDA50}</Project>
-      <Name>NavMeshComponentsExamplesEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{7C9EBA76-3CCA-5BC7-40D0-8E1E061D3808}</Project>
-      <Name>NavMeshComponentsEditor</Name>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{57963762-85BF-C9BA-AF18-64ACF2C24232}</Project>
+      <Name>NavMeshComponentsExamples</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{D2554978-8306-911E-6AE0-919A2B1914C3}</Project>
       <Name>NavMeshComponents</Name>
     </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsExamples.csproj">
-      <Project>{57963762-85BF-C9BA-AF18-64ACF2C24232}</Project>
-      <Name>NavMeshComponentsExamples</Name>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{7C9EBA76-3CCA-5BC7-40D0-8E1E061D3808}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{7CE1F2AF-83A0-507F-8B52-6D9BD5DFDA50}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
