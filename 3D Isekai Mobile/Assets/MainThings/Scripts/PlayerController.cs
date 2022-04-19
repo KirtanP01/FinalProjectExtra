@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
-    public float moveSpeed;
-    public float jumpForce;
+    public static float moveSpeed;
+    public static float jumpForce;
     public float gravityScale = 5f;
     public float bounceForce = 8f;
 
