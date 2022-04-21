@@ -69,6 +69,7 @@
     <Compile Include="Assets\MainThings\Scripts\GameManager.cs" />
     <Compile Include="Assets\MainThings\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\ButtonController.cs" />
+    <Compile Include="Assets\MainThings\Scripts\RIn\Jump.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSUIManager.cs" />
     <Compile Include="Assets\MainThings\Scripts\SwitchNameAndPic.cs" />
     <Compile Include="Assets\MainThings\Scripts\InfoCanvasController.cs" />
@@ -95,7 +96,6 @@
     <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueManager2.cs" />
     <Compile Include="Assets\MainThings\Scripts\PlayerController.cs" />
     <Compile Include="Assets\MainThings\Scripts\WhenIntEquals.cs" />
-    <Compile Include="Assets\MainThings\Scripts\RIn\Jump.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelExit.cs" />
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\SwitchingObjects.cs" />
     <Compile Include="Assets\MainThings\Scripts\HurtEnemy.cs" />
