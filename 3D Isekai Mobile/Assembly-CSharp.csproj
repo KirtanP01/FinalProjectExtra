@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\MainThings\Yurowm\Demo\Scripts\CharacterPanel.cs" />
     <Compile Include="Assets\MainThings\Scripts\MainStory.cs" />
-    <Compile Include="Assets\MainThings\Scripts\RIn\SuperJump.cs" />
+    <Compile Include="Assets\MainThings\Scripts\SpecialBlocks\SuperJump.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSResetPosition.cs" />
     <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueManager1.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSLevelEntry.cs" />
@@ -99,6 +99,7 @@
     <Compile Include="Assets\MainThings\Scripts\LevelExit.cs" />
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\SwitchingObjects.cs" />
     <Compile Include="Assets\MainThings\Scripts\HurtEnemy.cs" />
+    <Compile Include="Assets\MainThings\Scripts\SpecialBlocks\DisappearingBlocks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MainThings\Rin\Advance Unlit Shader\Advance Unlit.shader" />
