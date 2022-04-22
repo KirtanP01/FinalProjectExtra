@@ -13,6 +13,10 @@ public class SuperJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ()
+        {
+
+        }
         PlayerController.instance.jumpForce+=15;
     }
 }
