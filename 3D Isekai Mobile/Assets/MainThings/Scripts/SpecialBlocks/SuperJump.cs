@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +14,14 @@ public class SuperJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ()
-        {
-
-        }
-        PlayerController.instance.jumpForce+=15;
+        PlayerController.instance.jumpForce += 1;
     }
+
+    /*public double doubleJump()
+    {
+        double i = PlayerController.instance.jumpForce;
+        i += 1;
+        PlayerController.instance.jumpForce = i;
+        return PlayerController.instance.jumpForce;
+    }*/
 }

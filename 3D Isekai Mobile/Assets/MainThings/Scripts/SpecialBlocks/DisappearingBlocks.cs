@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DisappearingBlocks : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,4 +16,17 @@ public class DisappearingBlocks : MonoBehaviour
     {
         
     }
+
+    /*public  disappearAndReappear()
+    {
+        while (true)
+        {
+            if ()
+            {
+
+            }
+
+            yield return new WaitForSeconds(2);
+        }
+    }*/
 }
