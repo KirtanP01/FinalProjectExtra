@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         theCam = Camera.main;
         string Scenename = SceneManager.GetActiveScene().name;
         Debug.Log("Scene Name: " + Scenename);
-        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelTwo")
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelTwo" || Scenename == "LevelThree")
         {
             UIManagerRin.instance.TriggerRun();
             Debug.Log("Run Triggered");
