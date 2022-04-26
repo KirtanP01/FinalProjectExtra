@@ -8,6 +8,7 @@ TagManager:
   - InformationZones
   - MovementInfoZone
   - jumpPlatform
+  - DisappearingBlocks
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class DisappearingBlocks : MonoBehaviour
 {
+
+    GameObject disappearingBlock;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,19 +17,25 @@ public class DisappearingBlocks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        disappearingBlock = GameObject.FindGameObjectWithTag("DisappearingBlocks");
     }
 
-    /*public  disappearAndReappear()
+    IEnumerator disappearAndReappear(Collision collisionInfo)
     {
         while (true)
         {
-            if ()
+            if (collisionInfo.collider.tag == "DisappearingBlocks")
             {
+                if (disappearingBlock.enabled == true)
+                {
 
+                }
+                else
+                {
+
+                }
+                yield return new WaitForSeconds(2);
             }
-
-            yield return new WaitForSeconds(2);
         }
-    }*/
+    }
 }
