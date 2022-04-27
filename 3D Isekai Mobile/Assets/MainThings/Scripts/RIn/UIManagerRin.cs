@@ -52,7 +52,7 @@ public class UIManagerRin : MonoBehaviour
         
         string Scenename = SceneManager.GetActiveScene().name;
 
-        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelTwo")
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelTwo" || Scenename == "LevelThree")
         {
             UIManagerRin.instance.TriggerRun();
         }
