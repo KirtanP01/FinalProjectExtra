@@ -18,14 +18,16 @@ public class DialogueManager : MonoBehaviour
      * Rin = 4
      * Woman = 5
      */
-    private int[] characterOrder = new int[] {0, 1, 2, 2, 4, 2, 1, 4, 2, 4, 2, 1, 1, 5, 4, 5, 4, 3, 3, 3, 4, 3, 3, 3, 3};
+    private int[] characterOrder = new int[] { 0, 1, 2, 2, 4, 2, 1, 4, 2, 4, 2, 1, 1, 5, 4, 5, 4, 3, 3, 3, 4, 3, 3, 3, 3 };
     private string[] characters = new string[] { "Summoners", "Narrator", "King", "Queen", "Rin", "Woman" };
 
     private static int dialogueNum;
 
     public RawImage theImage;
-    
+
     public Texture[] textureList = new Texture[2];
+
+    //public Scene[] scene = new Scene[1];
 
     public Animator animator;
 
