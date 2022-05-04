@@ -70,6 +70,7 @@
     <Compile Include="Assets\MainThings\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\ButtonController.cs" />
     <Compile Include="Assets\MainThings\Scripts\SpecialBlocks\Jumpscare.cs" />
+    <Compile Include="Assets\MainThings\Scripts\RIn\Jump.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSUIManager.cs" />
     <Compile Include="Assets\MainThings\Scripts\SwitchNameAndPic.cs" />
     <Compile Include="Assets\MainThings\Scripts\InfoCanvasController.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\MainThings\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\MainThings\Scripts\StartMenu.cs" />
     <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\MainThings\Scripts\SpecialBlocks\BlockHideUnhide.cs" />
     <Compile Include="Assets\MainThings\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelSelect\LSCamera.cs" />
     <Compile Include="Assets\MainThings\Scripts\NavTest.cs" />
@@ -96,19 +98,17 @@
     <Compile Include="Assets\MainThings\Scripts\Dialogue\DialogueManager2.cs" />
     <Compile Include="Assets\MainThings\Scripts\PlayerController.cs" />
     <Compile Include="Assets\MainThings\Scripts\WhenIntEquals.cs" />
-    <Compile Include="Assets\MainThings\Scripts\RIn\Jump.cs" />
     <Compile Include="Assets\MainThings\Scripts\SpecialBlocks\DisappearingBlocks.cs" />
     <Compile Include="Assets\MainThings\Scripts\LevelExit.cs" />
     <Compile Include="Assets\MainThings\Scripts\Level Mechanics\SwitchingObjects.cs" />
     <Compile Include="Assets\MainThings\Scripts\HurtEnemy.cs" />
-    <Compile Include="Assets\MainThings\Scripts\BlockHideUnhide.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MainThings\Rin\Advance Unlit Shader\Advance Unlit.shader" />
     <None Include="Assets\MainThings\Yurowm\Shaders\SkinShader.shader" />
     <None Include="Assets\MainThings\Rin\ReadMe!.txt" />
-    <None Include="Assets\3D Isekai Assets\Skybox\Fantasy Skybox FREE\Fog and Ambient references.txt" />
-    <None Include="Assets\3D Isekai Assets\Skybox\Fantasy Skybox FREE\Readme.txt" />
+    <None Include="Assets\Prefabs\Skybox\Fantasy Skybox FREE\Fog and Ambient references.txt" />
+    <None Include="Assets\Prefabs\Skybox\Fantasy Skybox FREE\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

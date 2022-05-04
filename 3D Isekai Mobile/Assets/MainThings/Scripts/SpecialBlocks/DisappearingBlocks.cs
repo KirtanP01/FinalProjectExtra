@@ -2,45 +2,66 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class DisappearingBlocks : MonoBehaviour
 {
+    public GameObject GameObjectToHide;
+    public float MinTime = 2.0f;
+    public float MaxTime = 5.0f;
 
-    private float m_watInSeconds = 2.0f;
-    private float StartTime = 0.0f;
-    public GameObject disappearingBlock;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartTime = Time.time + m_watInSeconds;
+        //StartCoroutine(ToggleVisibilityCo(GameObjectToHide));
+        Invoker();
     }
-
-    // Update is called once per frame
-    void Update()
+    /*
+    IEnumerator ToggleVisibilityCo(GameObject someObj)
     {
-        disappearingBlock = GameObject.FindGameObjectWithTag("DisappearingBlocks");
-        //disappearingBlock.GetComponent<Collider>;
-    }
+        
+        if (someObj == null)
+        {
+            Debug.Log("Null Object");
+            yield break;
+        }
 
-    IEnumerator disappearAndReappear(Collision collisionInfo)
-    {
         while (true)
         {
-            if (collisionInfo.collider.tag == "DisappearingBlocks")
-            {
-                if (disappearingBlock.GetComponentInChildren<Renderer>().enabled == true)
-                {
-                    Debug.Log("Enable block");
-                    disappearingBlock.GetComponentInChildren<Renderer>().enabled = true;
-                }
-                else
-                {
-                    Debug.Log("Disable block");
-                    disappearingBlock.GetComponentInChildren<Renderer>().enabled = false;
-                }
-                yield return new WaitForSeconds(2);
-            }
+            Debug.Log("State: " + someObj.active);
+            someObj.SetActive(!someObj.active);
+
+            yield return new WaitForSeconds(Random.Range(MinTime, MaxTime));
+            Debug.Log("wait returned");
         }
+        Debug.Log("State: " + someObj.active);
+        Debug.Log("Exited While loop");
     }
+    */
+
+    void Invoker()
+    {
+        Invoke("appearDisappear", Random.Range(MinTime, MaxTime));
+    }
+
+    void appearDisappear()
+    {
+        Debug.Log("Invoker called");
+
+        float x = Random.Range(0.0F, 6.0F);
+        if (x > 3)
+        {
+            GameObjectToHide.SetActive(true);
+            Debug.Log("activated");
+        }
+        else
+        {
+            GameObjectToHide.SetActive(false);
+            Debug.Log("deactived");
+        }
+
+        Invoker();
+
+    }
+
+
 }
