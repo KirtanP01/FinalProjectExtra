@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Jumpscare : MonoBehaviour
 {
+
+    public GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,11 @@ public class Jumpscare : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
+            canvas.SetActive(true);
+        }
+        else
+        {
+            canvas.SetActive(false);
         }
     }
 }
