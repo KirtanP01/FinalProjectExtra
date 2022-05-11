@@ -44,12 +44,11 @@ public class PlayerController : MonoBehaviour
         theCam = Camera.main;
         string Scenename = SceneManager.GetActiveScene().name;
         Debug.Log("Scene Name: " + Scenename);
-        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss")
-        {
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelOne" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss")
+            {
             UIManagerRin.instance.TriggerRun();
             Debug.Log("Run Triggered");
         }
-
     }
 
     // Update is called once per frame
