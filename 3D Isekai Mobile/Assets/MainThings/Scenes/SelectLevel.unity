@@ -3276,7 +3276,7 @@ PrefabInstance:
     - target: {fileID: 3292595747958368845, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}
       propertyPath: displayName
-      value: Final Blow
+      value: Final Fight
       objectReference: {fileID: 0}
     - target: {fileID: 3292595747958368845, guid: 03b3708901cfc00448b8ec3314d0d5f9,
         type: 3}

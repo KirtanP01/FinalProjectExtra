@@ -290,9 +290,6 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity 2020.3.28f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UWP.Extensions">
-      <HintPath>C:\Program Files\Unity 2020.3.28f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
@@ -671,6 +668,93 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>C:\Program Files\Unity 2020.3.28f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+      <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
@@ -685,117 +769,9 @@
       <Project>{7B90AD7D-4A9A-DB1D-A4C6-3BDA337DEDC6}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{0C32ED08-46CA-23AC-1A8B-A8F48BAB1F0A}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{936D3D38-D09E-65E2-92E3-D69A4BA6E686}</Project>
-      <Name>UnityEditor.TestRunner</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{6D435EF2-585B-6A46-CB45-0115F10FA974}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{EB270321-A866-DEDD-736A-FBB95F91480F}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{6BBAA81B-DD29-16E3-F7A2-674B5F552B6A}</Project>
-      <Name>Unity.2D.Tilemap.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{05EA53D7-4F09-A960-9D04-623F51EFB533}</Project>
-      <Name>UnityEngine.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{AD3B21D0-EFE4-3CA4-4DCC-B9F94C84B5BC}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{40AB7E3E-D769-102C-CC39-C1E98771A749}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{542AF3CD-9248-BB28-3AEC-269CDD3875F5}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{F217C770-37E8-095A-241B-B470EC64A2C1}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsExamples.csproj">
       <Project>{57963762-85BF-C9BA-AF18-64ACF2C24232}</Project>
       <Name>NavMeshComponentsExamples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{7F4B0D85-0F83-BBE6-797A-7A3A6E489267}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{F75C15AF-5660-0868-1593-FDD7D5087A6E}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{80A0F496-9855-EA26-45D6-8863C4A19BE4}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{6E93364E-6085-465E-0507-18E353EBDE36}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Analytics.csproj">
-      <Project>{7DC76C7D-10E0-7A4C-D7DB-EFB38D049498}</Project>
-      <Name>Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{CEAAF526-867E-958F-5B85-729C408A328F}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{CC87B032-3A2D-2327-24F9-E97707EF0531}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{F72CE72B-F9A7-F741-ECBA-A9B6057D9720}</Project>
-      <Name>Unity.Analytics.DataPrivacy</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{A2BE5FEB-3F74-A4C9-67A8-F1AAAD4949EB}</Project>
-      <Name>Cinemachine</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{A2F0F401-855F-8859-B76D-223A09463732}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{363EDDFB-3ED1-B3E4-43E0-4D13C553B194}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{181AE0AB-C5C5-D98E-994A-61D7B09D2517}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{B4BD78AA-D3A5-ECC0-AF65-A831C61C57AC}</Project>
-      <Name>UnityEngine.Purchasing.Codeless</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{BC1AD87F-E281-8093-E295-D057BB356374}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{B2AD3AC7-A950-0813-C0E5-E7332A951048}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{0BD79EEE-CE65-59A0-FCD3-14023F9E9678}</Project>
-      <Name>UnityEngine.Purchasing.Stores</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{383835B7-A98C-68A5-9832-16B128976C56}</Project>
-      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{D2554978-8306-911E-6AE0-919A2B1914C3}</Project>
@@ -808,14 +784,6 @@
     <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
       <Project>{7CE1F2AF-83A0-507F-8B52-6D9BD5DFDA50}</Project>
       <Name>NavMeshComponentsExamplesEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{D9BBBB1C-053E-5F04-0BF6-B8902CA3C14E}</Project>
-      <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{8DBE181E-A4A3-D9A9-9E9E-6659325D322D}</Project>
-      <Name>UnityEditor.SpatialTracking</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
