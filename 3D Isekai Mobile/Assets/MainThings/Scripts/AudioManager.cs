@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
         } */
     }
 
-    // This method plays the music store in the music array bsaed on the event triggered
+    // This method plays the music store in the music array based on the event triggered
     public void PlayMusic(int musicToPlay)
     {
         for(int i = 0; i < music.Length; i++)

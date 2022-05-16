@@ -7,14 +7,13 @@ using UnityStandardAssets.CrossPlatformInput;
 public class LSLevelEntry : MonoBehaviour
 {
     public string levelName, levelToCheck, displayName;
-
     private bool canLoadLevel, levelUnlocked;
-
     public GameObject mapPointActive, mapPointInactive;
-
     private bool levelLoading;
-
     // Start is called before the first frame update
+    // This logic checks if user has completed the level using the PlayerPrefs object stored in the User's machine registry.
+    // If user has completed the level then that particular checkpoint will be enabled and user can enter into that level
+    // If user has NOT completed the level then that particular checkpoint will be disabled and user cannot enter into that level
     void Start()
     {
         if(PlayerPrefs.GetInt(levelToCheck + "_unlocked") == 1 || levelToCheck == "")
@@ -29,6 +28,7 @@ public class LSLevelEntry : MonoBehaviour
             levelUnlocked = false;
         }
 
+        // It sends use to the current level at the last checkpoint level
         if(PlayerPrefs.GetString("CurrentLevel") == levelName)
         {
             PlayerController.instance.transform.position = transform.position;
@@ -37,6 +37,8 @@ public class LSLevelEntry : MonoBehaviour
     }
 
     // Update is called once per frame
+    // This logic checks if the Jump button is pressed and the respective level is unlocked (i.e. checkpoint is active)
+    // then it load that level
     void Update()
     {
         if(CrossPlatformInputManager.GetButtonDown("Jump") && canLoadLevel && levelUnlocked && !levelLoading)
@@ -46,6 +48,8 @@ public class LSLevelEntry : MonoBehaviour
         }
     }
 
+    // This logic checks if Player collides with the checkpoint collider then it activates the panel and shows
+    // the level's friendly name, coins earned if any. If no coins earned then show ??? for coins count.
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
@@ -65,6 +69,7 @@ public class LSLevelEntry : MonoBehaviour
         }
     }
 
+    //This logic hides the checkpoint panel when user leaves the checkpoint collider.
     private void OnTriggerExit(Collider other)
     {
         if(other.tag == "Player")
@@ -74,6 +79,10 @@ public class LSLevelEntry : MonoBehaviour
             LSUIManager.instance.lNamePanel.SetActive(false);
         }
     }
+
+    // This function stops the player and loads the black screen to give the fade in effect between scene change and 
+    // after 2 frames it loads the selected level scene and save the name of the scene into the global variable CurrentLevel
+    // using Unity PlayerPrefs object. This information gets stored into the user's machine/device registry.
 
     public IEnumerator LevelLoadCo()
     {

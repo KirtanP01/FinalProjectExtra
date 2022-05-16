@@ -21,12 +21,6 @@ public class BossController : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //AudioManager.instance.PlayMusic(bossMusic);
-    }
-
     private void OnEnable()
     {
         AudioManager.instance.PlayMusic(bossMusic);

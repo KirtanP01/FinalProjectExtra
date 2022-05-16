@@ -5,50 +5,32 @@ using UnityEngine;
 
 public class SuperJump : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    //Deifned the jump force value for normal and super jumps so player's jump can be animated accordingly.
+    private int NormalJumpForce = 15;
+    private int SuperJumpForce = 30;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-
-    }
-
+    // This logic checks the interaction with the player and if he/she jumps on the platform with tag as "jumpPlatform"
+    // Then it adds more jump power to the player which let user jump higher level than the normal jump level
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "Player")
         {
-            //PlayerController.instance.transform.position=PlayerController.instance.transform.position + new Vector3(0f, 5f, 0f);
-            if (this.gameObject.name == "jumpPlatform")
+            //if (this.gameObject.name == "jumpPlatform")
+                if (this.gameObject.tag == "jumpPlatform")
             {
                 Debug.Log("Super Jump");
-                PlayerController.instance.jumpForce = 30;
+                PlayerController.instance.jumpForce = SuperJumpForce;
             }
         }
     }
-
-    void OnTriggerExit(Collider other)
+    // This logic reset the jump power to normal when the player moves out of the platform with tag as "jumpPlatform"
+      void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
             Debug.Log("Normal Jump");
-            PlayerController.instance.jumpForce = 15;
-            //PlayerController.instance.transform.position = PlayerController.instance.transform.position + new Vector3(0f, 0f, 0f);
-
+            PlayerController.instance.jumpForce = NormalJumpForce;
         }
-
     }
 
-    /*public double doubleJump()
-    {
-        double i = PlayerController.instance.jumpForce;
-        i += 1;
-        PlayerController.instance.jumpForce = i;
-        return PlayerController.instance.jumpForce;
-    }*/
 }

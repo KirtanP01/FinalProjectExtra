@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     /*
-     * Character Order In Dialogue
+     * Character indices in Dialogue system 
      * Summoners = 0
      * Narrator = 1
      * King = 2
@@ -18,34 +18,30 @@ public class DialogueManager : MonoBehaviour
      * Rin = 4
      * Woman = 5
      */
-    private int[] characterOrder = new int[] { 0, 1, 2, 2, 4, 2, 1, 4, 2, 4, 2, 1, 1, 5, 4, 5, 4, 3, 3, 3, 4, 3, 3, 3, 3 };
+    //Array to story the character index
     private string[] characters = new string[] { "Summoners", "Narrator", "King", "Queen", "Rin", "Woman" };
+    //Array to story the characterOrder based on their respective dialogues in the sequence
+    private int[] characterOrder = new int[] { 0, 1, 2, 2, 4, 2, 1, 4, 2, 4, 2, 1, 1, 5, 4, 5, 4, 3, 3, 3, 4, 3, 3, 3, 3 };
 
     private static int dialogueNum;
-
     public RawImage theImage;
-
     public Texture[] textureList = new Texture[2];
-
-    //public Scene[] scene = new Scene[1];
-
     public Animator animator;
-
     public static Queue<string> dialogues;
 
     // Start is called before the first frame update
     void Start()
     {
         dialogues = new Queue<string>();
-        theImage.texture = textureList[0];
+        theImage.texture = textureList[0]; // Setting the King's image initially
         dialogueNum = 0;
     }
 
+    // This function shows the dialog box to start the dialogue system
     public void StartDialogue(Dialogue dialogue)
     {
         //Debug.Log("Starting conversation with ");
         animator.SetBool("IsOpen", true);
-        //nameText.text = dialogue.name;
 
         dialogues.Clear();
 
@@ -57,10 +53,12 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    // This function displays sentences and their resepect character's name in the dialogue box
+
     public void DisplayNextSentence()
     {
         int count;
-        //Debug.Log(sentences.Count);
+        // At the end of all sentences it redirects the user to the tutorial level scene
         if (dialogues.Count == 0)
         {
             //Debug.Log("End of list");
@@ -68,15 +66,11 @@ public class DialogueManager : MonoBehaviour
             SceneManager.LoadScene("Tutorial Level", LoadSceneMode.Single);
             //return;
         }
-        else
+        else // Loop through all the dialogues and display them into the dialog box
         {
             if (dialogueNum == 11)
             {
-                //FindObjectOfType<RawImage>().;
-                //King = GameObject.FindObjectsOfType<RawImage>;
-                //king.enabled =false;
-                //queen.enabled = true;
-                theImage.enabled = false;
+                theImage.enabled = false; // Hiding the King's image after the 10th dialogue
             }
 
             if (dialogueNum == 13)
@@ -85,19 +79,16 @@ public class DialogueManager : MonoBehaviour
                 theImage.enabled = true;
             }
 
-            //if (dialogues.Count > 0)
-            //{
                 string sentence = dialogues.Dequeue();
                 //Debug.Log(sentence);
                 count = characterOrder[dialogueNum];
                 nameText.text = characters[count];
                 dialogueText.text = sentence;
                 dialogueNum++;
-            //}
         }
-        
     }
 
+    // This function hides the dialog box
     void EndDialogue()
     {
         //Debug.Log("End of conversation.");
