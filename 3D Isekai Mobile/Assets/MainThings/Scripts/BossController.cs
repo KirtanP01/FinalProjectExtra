@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has logic to manage the Boss animation, Bosss damage and boss end events
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,7 +49,8 @@ public class BossController : MonoBehaviour
 
         }
     }
-
+   //This method record the boss damage when player hits him and track the damage by setting the appropriate phase after each hit
+   // by the player. After 4th hit it triggers the Boss end event.
     public void DamageBoss()
     {
         AudioManager.instance.PlaySFX(bossHit);
@@ -82,9 +84,10 @@ public class BossController : MonoBehaviour
                 break;
         }
     }
-
+    //This method destroys the boss character and activate the end level star so user can win the game.
     IEnumerator EndBoss()
     {
+        Debug.Log("EndBoss called");
         AudioManager.instance.PlaySFX(bossDeath);
         AudioManager.instance.PlaySFX(bossDeathShout);
         AudioManager.instance.PlayMusic(AudioManager.instance.levelMusicToPlay);

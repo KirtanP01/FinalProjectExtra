@@ -1,3 +1,4 @@
+// This class controls the logic to move camera based on the mobile touch in the play mode
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,19 +38,6 @@ public class CameraTouchController : MonoBehaviour
             Camera.main.transform.position += direction;
         }
 
-        /*
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            float speed = 0.05f;
-            float nonSpeed = 0;
-
-            // Get movement of the finger since last frame
-            Vector3 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
-            // Move object across XY plane
-            transform.Translate(-touchDeltaPosition.x * speed, 0, 0);
-
-            transform.Translate(0, -touchDeltaPosition.y * nonSpeed, 0);
-        }*/
 
         Vector3 touchHeading = new Vector3(h, v, y);
         Vector3 lastHeading;

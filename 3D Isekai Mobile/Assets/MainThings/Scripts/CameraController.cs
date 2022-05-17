@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class is used to access the game's main camera in other classes.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
@@ -12,16 +13,5 @@ public class CameraController : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

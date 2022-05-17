@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// This class has a logic to keep track of the checkpoints added in the scene when user touches it so when player dies
+// the checkpoint position can be used to reswpan the player.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,18 +12,7 @@ public class Checkpoint : MonoBehaviour
 
     public int soundToPlay;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //This method activates or deactivates the checkpoint based on the player's interaction in the game and plays sound effect
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")

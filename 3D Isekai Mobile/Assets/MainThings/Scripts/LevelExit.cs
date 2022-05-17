@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has logic to end the level when user hit the Level End star
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has a logic to reset the player's health after respwan or add the life when player picks the heart in the game
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,17 +12,6 @@ public class HealthPickup : MonoBehaviour
 
     public int soundToPlay;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {

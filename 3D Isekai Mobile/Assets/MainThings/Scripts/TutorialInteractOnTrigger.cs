@@ -1,3 +1,6 @@
+// This class is used in the Tutorial level to show or hide the help text dynamically for each interactables
+// when player touches them
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

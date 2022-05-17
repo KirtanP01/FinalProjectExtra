@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class hides the wall once player touches the end level star in the Boss Level to open the Boss world
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update method is called once per frame
+    //This logic opens the Pause menu when user clicks the Escape button
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) || CrossPlatformInputManager.GetButtonDown("Escape"))
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //This logic respawn the player when he/she dies in the game
     public void Respawn()
     {
         StartCoroutine(RespawnCo());
@@ -89,19 +91,21 @@ public class GameManager : MonoBehaviour
         
         string Scenename = SceneManager.GetActiveScene().name;
         Debug.Log("Scene Name: " + Scenename);
-        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelOne" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss")
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelOne" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss" || Scenename == "LevelTwoN")
         {
             UIManagerRin.instance.TriggerRun();
             Debug.Log("Run Triggered");
         }
     }
 
+    //This logic sets the position which will be used to land the player when he/she is respawned in the game
     public void SetSpawnPoint(Vector3 newSpawnPoint)
     {
         respawnPosition = newSpawnPoint;
         Debug.Log("Spawn Point Set");
     }
 
+    //This logic adds up the coins collected by te player in the game and shows up on the screen
     public void AddCoins(int coinsToAdd)
     {
         currentCoins += coinsToAdd;

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// This class has logic to control the Skeleton's movements in the game based on the patrol points and the player's position
+// It approaches the player or attach the player based on the player's possition.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;

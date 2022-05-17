@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// This class has the logic to manage the player's health condition, removes the heart, initial player kill event
+// and reset the health  if all hearts are lost and display the health on the screen 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

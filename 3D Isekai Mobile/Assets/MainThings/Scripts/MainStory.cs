@@ -1,3 +1,5 @@
+// This class is used in the cut scene to enable the player in idle mode and send user to the next level which is dailogue system
+// at the end of the cut scene
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

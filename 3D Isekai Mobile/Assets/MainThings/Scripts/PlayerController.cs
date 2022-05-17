@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// This class has logic to track the position of the player by using the joystick or keyboard inputs and
+// moves the player in all direction. It also manages the logic to control the movement when player hits the
+// spikes and bounce backs
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -44,7 +47,7 @@ public class PlayerController : MonoBehaviour
         theCam = Camera.main;
         string Scenename = SceneManager.GetActiveScene().name;
         Debug.Log("Scene Name: " + Scenename);
-        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelOne" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss")
+        if (Scenename == "Tutorial Level" || Scenename == "SelectLevel" || Scenename == "LevelOne" || Scenename == "LevelTwo" || Scenename == "LevelThree" || Scenename == "LevelBoss" || Scenename == "LevelTwoN")
             {
             UIManagerRin.instance.TriggerRun();
             Debug.Log("Run Triggered");

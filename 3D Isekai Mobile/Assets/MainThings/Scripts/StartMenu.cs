@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has the logic to start a new game from a scratch or goto Select Level screen or Continue the game
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,12 +25,7 @@ public class StartMenu : MonoBehaviour
         UIManagerRin.instance.TriggerRun();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // This method load the new game when user clicks on the New Game button
     public void NewGame()
     {
         SceneManager.LoadScene(firstLevel);
@@ -40,17 +36,20 @@ public class StartMenu : MonoBehaviour
         ResetProgress();
     }
 
+    // This method resume the game when user clicks on the Continue button
     public void Continue()
     {
         SceneManager.LoadScene(levelSelect);
     }
 
+    // This method closes the game when user clicks on the Quit button
     public void QuitGame()
     {
         Debug.Log("Quit Game");
         Application.Quit();
     }
 
+    //This method clears all the PlayerPrefs for all levels visited by the user so far so everything will be started a new
     public void ResetProgress()
     {
         for(int i = 0; i < levelNames.Length; i++)

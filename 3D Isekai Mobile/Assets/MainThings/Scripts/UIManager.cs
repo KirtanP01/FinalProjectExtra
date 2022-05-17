@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//This class manages the flow of Start menu to navigate to Select Level or Options Menu or resume the game or back to Main Menu
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -52,39 +53,45 @@ public class UIManager : MonoBehaviour
             }
         }
     }
-
+    // This method resumes the game when user clicks on the Resume button
     public void Resume()
     {
         GameManager.instance.PauseUnpause();
     }
 
+    // This method opens the options menu when user clicks on the Options button
     public void OpenOptions()
     {
         optionsScreen.SetActive(true);
     }
 
+    // This method closes the options menu when user clicks on the Close button
     public void CloseOptions()
     {
         optionsScreen.SetActive(false);
     }
 
+    // This method redirct the user to the Select Level scene when user clicks on the Level Select button
     public void LevelSelect()
     {
         SceneManager.LoadScene(levelSelect);
         Time.timeScale = 1f;
     }
 
+    // This method redirct the user to the Start Menu scene when user clicks on the Main Menu button
     public void MainMenu()
     {
         SceneManager.LoadScene(mainMenu);
         Time.timeScale = 1;
     }
 
+    // This method sets the Music volume level when user slides the Music Slider
     public void SetMusicLevel()
     {
         AudioManager.instance.SetMusicLevel();
     }
 
+    // This method sets the sound effect volume level when user slides the SFX Slider
     public void SetSFXLevel()
     {
         AudioManager.instance.SetSFXLevel();

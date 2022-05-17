@@ -1,21 +1,10 @@
-﻿using System.Collections;
+﻿//This class triggers the boss damage when player hits the boss's right or left hand
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BossDamagePoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")

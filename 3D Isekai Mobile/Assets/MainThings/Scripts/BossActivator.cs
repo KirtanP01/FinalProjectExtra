@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has logic to activate the Boss character when player hits the Bosss bridge
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,18 +12,6 @@ public class BossActivator : MonoBehaviour
     private void Awake()
     {
         instance = this;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter(Collider other)

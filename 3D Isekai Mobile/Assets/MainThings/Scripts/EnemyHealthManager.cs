@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// This class has a logic to trigger the death of the skeleton when player jumps on it and destroy this object and plays the sound
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,13 +18,7 @@ public class EnemyHealthManager : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void TakeDamage()
+      public void TakeDamage()
     {
         currentHealth--;
 
